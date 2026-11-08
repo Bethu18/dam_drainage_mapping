@@ -1,24 +1,34 @@
 crs: "EPSG:32737"
 
-stream_threshold_km2: 1.0   # minimum upstream area for a cell to count as stream
+stream_threshold_km2: 0.1   # minimum upstream area for a cell to count as stream
+snap_threshold_km2: 0.1     # minimum upstream area of the cell an outlet snaps to
 max_snap_distance_m: 100    # snap distances above this are flagged for checking
 
 # CRS that the dam easting and northing values are given in
 coords_crs: "EPSG:32737"
 
+map_author: null   # name shown bottom right on maps
+
 dams:
   - name: Mikumbune
     easting: 280731.943
     northing: 9992881.7855
+    runoff_factor: null   # runoff factor Kr shown on the map if set
   - name: Kabunda
     easting: 285571.005
     northing: 9980597.840
+    stream_threshold_km2: 0.05   # overrides the default stream threshold for this dam
+    runoff_factor: null   # runoff factor Kr shown on the map if set
   - name: Njegu
     easting: 269023.697
     northing: 9959111.626
+    stream_threshold_km2: 0.05   # overrides the default stream threshold for this dam
+    runoff_factor: null   # runoff factor Kr shown on the map if set
   - name: Nairutia
-    easting: 246204.363
-    northing: 9983139.027
+    easting: 246212.093
+    northing: 9983114.053
+    stream_threshold_km2: 0.01   # overrides the default stream threshold for this dam
+    runoff_factor: null   # runoff factor Kr shown on the map if set
 
 dem:
   source: NASADEM
