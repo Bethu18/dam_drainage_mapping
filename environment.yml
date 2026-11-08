@@ -1,0 +1,12 @@
+name: dam-drainage
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pysheds
+  - rasterio
+  - geopandas
+  - matplotlib
+  - jupyterlab
+  - pyyaml
+  - nbstripout

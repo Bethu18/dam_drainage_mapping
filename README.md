@@ -1,2 +1,16 @@
 # dam_drainage_mapping
-A workflow for determining a dam upstream contributing area(water-shade)
+
+## Overview
+Catchment and stream network delineation for four dams in Nyeri County, Kenya, from a 30 m SRTM DEM, with drainage maps for each dam.
+
+## Study area
+
+## Data
+
+## Method
+
+## Results
+
+## Reproducing
+
+## Licence

@@ -1,0 +1,22 @@
+crs: "EPSG:32737"
+
+# Minimum number of upstream cells for a cell to be classed as stream
+stream_threshold: null
+
+dams:
+  - name: null
+    lat: null
+    lon: null
+    river: null
+  - name: null
+    lat: null
+    lon: null
+    river: null
+  - name: null
+    lat: null
+    lon: null
+    river: null
+  - name: null
+    lat: null
+    lon: null
+    river: null
