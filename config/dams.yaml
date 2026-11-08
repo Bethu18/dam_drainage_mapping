@@ -1,7 +1,7 @@
 crs: "EPSG:32737"
 
-# Minimum number of upstream cells for a cell to be classed as stream
-stream_threshold: null
+stream_threshold_km2: 1.0   # minimum upstream area for a cell to count as stream
+max_snap_distance_m: 100    # snap distances above this are flagged for checking
 
 # CRS that the dam easting and northing values are given in
 coords_crs: "EPSG:32737"

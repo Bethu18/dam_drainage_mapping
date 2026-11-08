@@ -12,3 +12,4 @@ dependencies:
   - nbstripout
   - requests
   - tqdm
+  - numpy<2.4
