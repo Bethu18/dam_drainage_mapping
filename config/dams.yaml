@@ -3,20 +3,28 @@ crs: "EPSG:32737"
 # Minimum number of upstream cells for a cell to be classed as stream
 stream_threshold: null
 
+# CRS that the dam easting and northing values are given in
+coords_crs: "EPSG:32737"
+
 dams:
-  - name: null
-    lat: null
-    lon: null
-    river: null
-  - name: null
-    lat: null
-    lon: null
-    river: null
-  - name: null
-    lat: null
-    lon: null
-    river: null
-  - name: null
-    lat: null
-    lon: null
-    river: null
+  - name: Mikumbune
+    easting: 280731.943
+    northing: 9992881.7855
+  - name: Kabunda
+    easting: 285571.005
+    northing: 9980597.840
+  - name: Njegu
+    easting: 269023.697
+    northing: 9959111.626
+  - name: Nairutia
+    easting: 246204.363
+    northing: 9983139.027
+
+dem:
+  source: NASADEM
+  resolution_m: 30
+  bbox:
+    west: 36.45
+    south: -0.75
+    east: 37.35
+    north: 0.15
