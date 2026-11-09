@@ -12,7 +12,7 @@ Dam outlet coordinates, in WGS 84 / UTM zone 37S (EPSG:32737), as set in `config
 | --------- | ----------- | ------------ |
 | Mikumbune | 280731.943  | 9992881.7855 |
 | Kabunda   | 285571.005  | 9980597.840  |
-| Njegu     | 269023.697  | 9959111.626  |
+| Njengu    | 269023.697  | 9959111.626  |
 | Nairutia  | 246212.093  | 9983114.053  |
 
 ## Data
@@ -34,7 +34,7 @@ Dam outlet coordinates, in WGS 84 / UTM zone 37S (EPSG:32737), as set in `config
 | --------- | ---------------------- |
 | Mikumbune | 0.10                   |
 | Kabunda   | 0.05                   |
-| Njegu     | 0.05                   |
+| Njengu    | 0.05                   |
 | Nairutia  | 0.01                   |
 
 All parameters are set in `config/dams.yaml`.
@@ -45,7 +45,7 @@ All parameters are set in `config/dams.yaml`.
 | --------- | ----------------- | -------------------- | ---------------------- | --------------- |
 | Mikumbune | 19.0              | 15.91                | 0.10                   | 73              |
 | Kabunda   | 124.1             | 2.84                 | 0.05                   | 33              |
-| Njegu     | 94.0              | 10.49                | 0.05                   | 93              |
+| Njengu    | 94.0              | 10.49                | 0.05                   | 93              |
 | Nairutia  | 42.2              | 0.42                 | 0.01                   | 22              |
 
 ## Limitations
@@ -74,9 +74,14 @@ All parameters are set in `config/dams.yaml`.
    python scripts/get_dem.py
    ```
 
-4. Run `notebooks/01_delineation.ipynb`, then `notebooks/02_make_maps.ipynb`.
+4. Run `notebooks/01_delineation.ipynb`, then `notebooks/02_make_maps.ipynb`. The delineation notebook writes the KML files. The map notebook writes the A1 maps and the previews.
 
-`data/` and `outputs/` are not tracked by git. The script and notebooks create them. The maps are saved to `figures/`.
+`data/` and `outputs/` are not tracked by git. The script and notebooks create them, and rerunning the notebooks regenerates `outputs/`.
+
+Outputs:
+
+- `outputs/maps/`: one A1 landscape map (841 × 594 mm) per dam, as a JPEG (300 dpi) and a PDF.
+- `outputs/kml/`: one KML per dam, in WGS84 for Google Earth, with a Watershed folder (catchment polygon) and a Streams folder.
 
 ## Licence
 

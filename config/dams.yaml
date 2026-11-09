@@ -19,7 +19,7 @@ dams:
     northing: 9980597.840
     stream_threshold_km2: 0.05   # overrides the default stream threshold for this dam
     runoff_factor: null   # runoff factor Kr shown on the map if set
-  - name: Njegu
+  - name: Njengu
     easting: 269023.697
     northing: 9959111.626
     stream_threshold_km2: 0.05   # overrides the default stream threshold for this dam

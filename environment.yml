@@ -13,3 +13,4 @@ dependencies:
   - requests
   - tqdm
   - numpy<2.4
+  - simplekml
